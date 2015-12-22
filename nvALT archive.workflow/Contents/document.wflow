@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>basedir="/Users/post/Library/Application Support/nvALT/Media/"
+					<string>basedir=`cat ~/.imgdir`
 
 for f in "$@"
 do
@@ -75,7 +75,7 @@ do
 		targetname="$prefix.1.$suffix"
 	done
 
-	cp $f "$targetdir/$targetname"
+	mv $f "$targetdir/$targetname"
 	echo "![$name]($archivedir/$targetname)"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -187,12 +187,10 @@ done</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:554.000000</string>
+				<string>449.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -268,14 +266,12 @@ done</string>
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>C5BD016D-A6C4-4D20-9A2D-256519D96D5D</key>
+		<key>72B78F92-7F20-4F88-A5B8-C8F32A18EA99</key>
 		<dict>
 			<key>from</key>
 			<string>EC3094D6-0A65-4B3B-974F-5617C60CE54A - EC3094D6-0A65-4B3B-974F-5617C60CE54A</string>
