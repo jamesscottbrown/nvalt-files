@@ -28,3 +28,8 @@ should be "nvALT archive" and "nvALT archive screenshot" (exactly). I use ^⌘a 
    select it from the Finder Services menu. The image will be copied
    to a directory within `/{YEAR}/{MONTH}` under the directory specified in `.imgdir`, and a Markdown-formatted relative path to this
    file will be placed on the clipboard, to be pasted into your nvALT document.
+
+For images to be displayed in the preview, you will need to set the base path to the directory you set in `.imgdir` by adding a `base` tag within the `<head>` section of `~/Library/Application Support/nvAlt/template.html` (eg. `<base href="file:///Users/jsb/Notes/img/">`)
+
+We also recommend that you install a Preview Theme, such as [nvalt-prime](https://github.com/bwiggs/nvalt-prime).
+
