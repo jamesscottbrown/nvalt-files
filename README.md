@@ -29,7 +29,7 @@ should be "nvALT archive" and "nvALT archive screenshot" (exactly). I use ^⌘a 
    to a directory within `/{YEAR}/{MONTH}` under the directory specified in `.imgdir`, and a Markdown-formatted relative path to this
    file will be placed on the clipboard, to be pasted into your nvALT document.
 
-For images to be displayed in the preview, you will need to set the base path to the directory you set in `.imgdir` by adding a `base` tag within the `<head>` section of `~/Library/Application Support/nvAlt/template.html` (eg. `<base href="file:///Users/jsb/Notes/img/">`)
+For images to be displayed in the preview, you will need to [set an all-purpose base path](http://brettterpstra.com/2012/09/27/quick-tip-images-in-nvalt/) to the template. This path should be to the directory you set in your `.imgdir` file.
 
-We also recommend that you install a Preview Theme, such as [nvalt-prime](https://github.com/bwiggs/nvalt-prime).
+You may also wish to enhance your template by installing a theme such as [nvalt-prime](https://github.com/bwiggs/nvalt-prime).
 
