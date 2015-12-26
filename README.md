@@ -25,8 +25,11 @@ Initially crosshairs will appear, allowing selection of the area to be screensho
 - `nvalt-index.rb` is a ruby script which scans through a directory of notes, and emits Markdown formatting for an index page. The metadata it reads is in the format 'Key: Value\n' somewhere above a hashtag - for, example:
 
 >Title: An interesting talk
+
 >Speaker: Someone Famous
+
 >Location: A large lecture theatre
+
 >#talk
 
 would be parsed, and appear as a row in a table under the subtitle 'Talk'. The order of the keys does not matter, and a key will appear as a column in a table even if it does not appear in every note containing the corresponding hashtag. Note that a table will not be listed if it contains only a single row. I have three hashtags: talk (title, speaker, venue), book (title, author, date read, genre), recipe (name, meal, source).
