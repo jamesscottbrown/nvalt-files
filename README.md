@@ -22,7 +22,7 @@ The files in this archive provide several functions. The first (`nvALT archive.w
 - `nvALT archive screenshot.workflow` is An Automator workflow implementing a service that takes a screenshot, moves it to a canonical location and copies a [Markdown](http://daringfireball.net/projects/markdown/)-formatted image URL to that image. Before taking the screenshot, a dialog box appears to ask for the desired file name. 
 Initially crosshairs will appear, allowing selection of the area to be screenshotted; pressing the space bar toggles between selecting an area or whole window. Prssing the escape button cancels without saving a screenshot.
 
-- `nvalt-index.rb` is a ruby script which scans through a directory of notes, and emits Markdown formatting for an index page. The metadata it reads is in the format 'Key: Value\n' somewhere above a hashtag - for, example:
+- `nvalt-index.rb` is a ruby script which scans through a directory of notes, and does one fo two things, depending on the arguments it receives: either it emits Markdown formatting for an index page (`--tabulate`), or a [Grapviz](https://en.wikipedia.org/wiki/Graphviz) DOT language representation of links between notes (`--links`). The index is constructed based on metadata at the top of a note in the format 'Key: Value\n' above a hashtag - for, example:
 
 >Title: An interesting talk
 
@@ -34,7 +34,7 @@ Initially crosshairs will appear, allowing selection of the area to be screensho
 
 would be parsed, and appear as a row in a table under the subtitle 'Talk'. The order of the keys does not matter, and a key will appear as a column in a table even if it does not appear in every note containing the corresponding hashtag. Note that a table will not be listed if it contains only a single row. I have three hashtags: talk (title, speaker, venue), book (title, author, date read, genre), recipe (name, meal, source).
 
-- `noteSync.sh` is the script that I run with cron: it automatically re-constructs the index page, commits changes to Git, and runs a Git push/pull with a remote repository (providing both backup and scryonization between my desktop and laptop). *It contains hard-coded paths that you will need to change for it to work*.
+- `noteSync.sh` is the script that I run with cron: it automatically re-constructs the index page, produces a PNG diagramming the links between notes, commits changes to Git, and runs a Git push/pull with a remote repository (providing both backup and scryonization between my desktop and laptop). *It contains hard-coded paths that you will need to change for it to work*.
 
 
 ## Installation
