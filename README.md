@@ -57,7 +57,7 @@ should be "nvALT archive" and "nvALT archive screenshot" (exactly). I use ^⌘a 
 
 ### Preview template
 
-You may also wish to enhance the default template by installing a theme such as [nvalt-prime](https://github.com/bwiggs/nvalt-prime).
+You may also wish to enhance the default template by installing a theme such as dg2's fork of the [nvalt-prime](https://github.com/dg2/nvalt-prime) theme.
 
 Whether you do this or not, you will need to [set an all-purpose base path](http://brettterpstra.com/2012/09/27/quick-tip-images-in-nvalt/) to the template in order to have images displayed in the preview. This path should be to the directory you set in your `.imgdir` file.
 
