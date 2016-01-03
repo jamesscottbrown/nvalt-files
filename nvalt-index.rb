@@ -151,7 +151,7 @@ def printTable(keys,filenumber,data)
 
 	puts "|" + keys.join("|") + "|"
 
-	listOfDashes = ["-"] * keys.length()
+	listOfDashes = ["---"] * keys.length()
 	puts "|" + listOfDashes.join("|") + "|"
 
 	for i in 0..(filenumber-1)
