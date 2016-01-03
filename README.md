@@ -69,7 +69,7 @@ You could use a private github repository could be used as a remote, or run a [G
 
 ### Cron
 
-[Cron](https://en.wikipedia.org/wiki/Cron) is a tool that runs jobs at scheduled times. To run `nvalt-index.rb`  every 20 minutes, open a terminal, run `crontab -e`, and add the following line
+[Cron](https://en.wikipedia.org/wiki/Cron) is a tool that runs jobs at scheduled times. To run `noteSync.sh`  every 20 minutes, open a terminal, run `crontab -e`, and add the following line
 
     */20    *       *       *       *       ~/code/backupScripts/noteSync.sh >> /dev/null
 
